@@ -33,7 +33,7 @@ export const env = {
   encarPageSize: getEnvNumber('ENCAR_PAGE_SIZE', 24),
   encarQuery: getEnvValue('ENCAR_QUERY', '(And.Hidden.N._.CarType.N.)'),
   encarSyncPages: getEnvNumber('ENCAR_SYNC_PAGES', 3),
-  mongoUri: getEnvValue('MONGODB_URI', 'mongodb://127.0.0.1:27017/million_miles'),
+  mongoUri: getEnvValue('MONGODB_URI'),
   payloadSecret: getEnvValue('PAYLOAD_SECRET'),
   siteUrl: getEnvValue('NEXT_PUBLIC_SITE_URL', 'http://localhost:3000'),
 } as const
